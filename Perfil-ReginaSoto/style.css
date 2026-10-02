@@ -11,18 +11,18 @@ body {
     justify-content: center;
     align-items: center;
     padding: 40px 20px;
-    background: #eef1f5;
-    color: #252525;
+    background: #9fc7af;
+    color: #d6ecda35;
 }
 
 .card {
     width: 100%;
     max-width: 850px;
-    background: #ffffff;
+    background: #bed9c2;
     border-radius: 25px;
     overflow: hidden;
     box-shadow:
-       0 20px 50px rgba(0, 0, 0, 0.12);
+       0 20px 50px rgba(248, 248, 248, 0.12);
     animation: cardAppear 0.7s ease;
 }
 
@@ -54,7 +54,6 @@ body {
     transition: transform 0.6s ease;
 }
 
-
 .card:hover .cover img {
     transform: scale(1.04);
 }
@@ -78,7 +77,6 @@ body {
         0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-
 .profile-image img {
     width: 100%;
     height: 100%;
@@ -97,4 +95,43 @@ body {
     font-weight: 500;
     color: #666;
     margin-bottom: 15px;
+}
+
+.profile-description {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    color: #2f6048;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+/* REDES SOCIALES */
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.social-links a {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+    background: #68796e;
+    color: #f5f9f6;
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-4px);
+    background: #689f64;
+    color: #31443b;
 }
