@@ -12,3 +12,33 @@ const tabs = document.querySelectorAll(".tab");
 */
 
 const sections = document.querySelectorAll(".tab-content");
+
+/* Recorremos cada botón. */
+
+tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+
+        const sectionId = tab.dataset.section;
+        tabs.forEach(item => {
+
+            item.classList.remove("active");
+
+        });
+         tab.classList.add("active");
+
+         sections.forEach(section => { 
+            section.classList.remove("active");
+
+        });
+
+        const selectedSection =
+            document.getElementById(sectionId);
+
+                  if (selectedSection) {
+                    selectedSection.classList.add("active");
+
+        }
+
+    });
+
+});
